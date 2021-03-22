@@ -15,7 +15,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
-# Herok
+# Heroku
 if os.getenv("HEROKU_DEPLOY", ""):
     try:
         import dj_database_url
