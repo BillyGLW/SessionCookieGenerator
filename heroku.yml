@@ -1,0 +1,9 @@
+build:
+  docker:
+    web: Heroku.dockerfile
+run:
+  web: gunicorn project.wsgi:application --bind 0.0.0.0:$PORT
+release:
+  image: web
+  command:
+    - python manage.py collectstatic --no-input --clear

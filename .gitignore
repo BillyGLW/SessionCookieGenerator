@@ -1,0 +1,7 @@
+*.sh
+venv
+Heroku*
+*.txt
+toremove
+*.swp
+nginx
