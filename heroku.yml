@@ -1,6 +1,8 @@
 build:
+  config:
+    HEROKU_DEPLOY: 1
   docker:
-    web: Heroku.dockerfile
+    web: dockerfile.heroku
 run:
   web: gunicorn project.wsgi:application --bind 0.0.0.0:$PORT
 release:
