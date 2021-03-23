@@ -5,13 +5,16 @@ Application is meant to be used as a session cookie generator (as a ctf utility)
 
 ### Set-up
 Set up new docker container, so that:
+
 ```
-	git clone https://github.com/BillyGLW/SessionCookieGenerator.git && cd SessionCookieGenerator
+git clone https://github.com/BillyGLW/SessionCookieGenerator.git && cd SessionCookieGenerator
 ```
-	Build and run docker container:
+
+Build and run docker container:
+
 ```
-	docker-compose build .
-	docker-compose down && docker-compose up
+docker-compose build .
+docker-compose down && docker-compose up
 ```
 
 ### Usage
