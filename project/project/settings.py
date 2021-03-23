@@ -26,7 +26,7 @@ if os.getenv("HEROKU_DEPLOY", ""):
     except Exception as e:
         raise Exception(e)
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "mysterious-meadow-14996.herokuapp.com"] 
+# ALLOWED_HOSTS = ["localhost", "127.0.0.1", "mysterious-meadow-14996.herokuapp.com"] 
 
 # Flower
 # flower -a project --port 5555 --broker=redis://:foobared@127.0.0.1:6379
