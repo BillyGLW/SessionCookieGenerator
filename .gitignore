@@ -1,0 +1,8 @@
+static_volume
+*.sh
+venv/
+notes.txt
+*heroku
+heroku*
+toremove
+*.swp
