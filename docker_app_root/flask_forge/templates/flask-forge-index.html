@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}
+Session decoder | Flask
+{% endblock %}
+
+
+{% block frontend_scripts %}
+{% load static %}
+<script src="{% static '/promises.js' %}"> </script>
+{% endblock %}
+
+{% block content %}
+<section>
+<!-- <div id="sn-decoder-index-wrapper">  -->
+	<div id="geo-loc-div-tbl-1"> 
+		<div class="geo-loc-form_2">
+		<form style="background-color: rgba(0,0,0, 0.1);" method="POST"> {% csrf_token %}	
+			{{ form.as_p }}
+			<input type="submit" class="btn-success" name="btn-submit-confirm" value="Confirm">
+		</form>
+		<input type="button" class="btn-info" id="btn-submit-promise" name="btn-submit-promise" value="Promise" >
+		<h2><b>Data:</b> </h2>
+		<p id="id-returned-data">
+			{% if data %}
+				{{ data }} 
+			{% else %}
+				empty
+			{% endif %}
+		</p>
+	</div>
+</div>
+</section>
+{% endblock %}
