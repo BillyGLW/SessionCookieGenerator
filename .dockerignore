@@ -1,3 +1,4 @@
 _env
 *.pyc
 __pycache__
+docker_clean.py
