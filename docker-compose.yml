@@ -67,4 +67,4 @@ volumes:
     driver_opts:
       type: none
       o: bind
-      device: /etc/sharing/sharing_local/flask_forge_v1/SessionCookieGenerator/docker_app_root
+      device: docker_app_root
