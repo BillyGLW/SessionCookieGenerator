@@ -6,7 +6,7 @@ urlpatterns	 = [
 	path('task/', task_test, name='task_test'),
 	path('celery/tasks/f_query_01/', f_query_01, name='flask_query_01'),
 	# simpler
-	# path(r'^getstatus/<task_id>', get_status, name='task_get_status'),
+	path(r'^getstatus/<task_id>', get_status, name='task_get_status'),
 	# or safier
-	re_path(r'^getstatus/(?P<task_id>([\w]+[-]*){5})', get_status, name='task_get_status'),
+	# re_path(r'^getstatus/(?P<task_id>([\w]+[-]*){5})', get_status, name='task_get_status'),
 ]
