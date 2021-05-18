@@ -1,5 +1,6 @@
 static_volume
-*.sh
+cle*.sh
+sd*.sh
 venv/
 notes.txt
 *heroku
